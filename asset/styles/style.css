@@ -1,0 +1,49 @@
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+.font-color {
+    color: greenyellow;
+}
+.font-white{
+    color: white;
+}
+.bg-green{
+    background: greenyellow;
+}
+.navbar {
+    transition: all 0.5s;
+} 
+.nav-link {
+    position: relative;
+}
+  
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+.bg-light {
+    background-color: #efffed !important;
+} 
